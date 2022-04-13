@@ -1291,7 +1291,7 @@ function Sprite(pInst, _x, _y, _w, _h) {
         animations[currentAnimation].update();
 
         this._syncAnimationSizes();
-        
+
         //patch for unpreloaded single image sprites
         if(this.width == 1 && this.height == 1) {
           this.width = animations[currentAnimation].getWidth();
@@ -3659,7 +3659,7 @@ function SpriteAnimation(pInst) {
     if(previousFrame !== frame)
       this.frameChanged = true;
 
-    
+
 
   };//end update
 
@@ -3695,7 +3695,7 @@ function SpriteAnimation(pInst) {
   * fire when animation ends
   *
   * @method onComplete
-  * @return {SpriteAnimation} 
+  * @return {SpriteAnimation}
   */
   this.onComplete = function () {
     return undefined;
@@ -3965,7 +3965,7 @@ function SpriteSheet(pInst) {
 
     pInst.image(this.image, x, y, dWidth, dHeight, frameToDraw.x, frameToDraw.y, frameToDraw.width, frameToDraw.height);
 
-      
+
   };
 
   /**
